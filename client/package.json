@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.0.0",
   "scripts": {
-    "dev": "conc --kill-others \"cd C:\\Users\\savio\\OneDrive\\Área/de/Trabalho\\gabriel\\c/bros\\csharp\\udemy\\DatingApp\\api && dotnet run watch\" \"npm --prefix \"C:\\Users\\savio\\OneDrive\\Área/de/Trabalho\\gabriel\\c/bros\\csharp\\udemy\\DatingApp\\client\" run start\"",
+    "dev": "conc --kill-others \"npm run start\" \"cd ../api && dotnet run watch\"",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
