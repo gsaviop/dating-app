@@ -1,4 +1,5 @@
 using System.Text;
+using api;
 using api.Data;
 using api.Extensions;
 using api.Interfaces;
@@ -17,6 +18,8 @@ builder.Services.AddIdentityServices(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionMiddleware>();
+
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
     .WithOrigins("https://localhost:4200"));
 
